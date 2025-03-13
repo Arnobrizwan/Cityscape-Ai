@@ -1,0 +1,21 @@
+# Ignore all GeoJSON files
+*.geojson
+
+# Ignore cache files
+cache/
+
+# Ignore Python virtual environment files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment variables and config files
+.env
+config.json
+credentials.json
+
+# Ignore system files (MacOS & Windows)
+.DS_Store
+Thumbs.db
