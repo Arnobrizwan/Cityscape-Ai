@@ -19,3 +19,4 @@ credentials.json
 # Ignore system files (MacOS & Windows)
 .DS_Store
 Thumbs.db
+get-pip.py
