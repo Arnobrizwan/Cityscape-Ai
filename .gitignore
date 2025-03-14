@@ -2,7 +2,7 @@
 *.geojson
 
 # Ignore ML model checkpoints & logs
-ML/trained_gnn_model.pth
+!ML/trained_gnn_model.pth  # ✅ Allow trained model
 ML/checkpoints/
 ML/logs/
 
