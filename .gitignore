@@ -1,8 +1,19 @@
-# Ignore all GeoJSON files
+# Ignore all GeoJSON files (unless you want to version control them)
 *.geojson
+
+# Ignore ML model checkpoints & logs
+ML/trained_gnn_model.pth
+ML/checkpoints/
+ML/logs/
+
+# Ignore large dataset files
+ML/*.zip
+ML/*.tar.gz
+ML/*.csv
 
 # Ignore cache files
 cache/
+*.cache
 
 # Ignore Python virtual environment files
 venv/
@@ -10,6 +21,11 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+Pipfile
+Pipfile.lock
+
+# Ignore Jupyter Notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
 
 # Ignore environment variables and config files
 .env
