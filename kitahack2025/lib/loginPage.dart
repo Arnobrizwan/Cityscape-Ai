@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:kitahack2025/authentication.dart';
+import 'package:kitahack2025/LoginPage/authentication.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
