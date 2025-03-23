@@ -8,11 +8,10 @@ import torch.nn.functional as F
 from collections import deque
 import geopandas as gpd
 
-# Load Road Network Graph (Already processed in previous steps)
+# ✅ Load and build the road network graph
 road_path = "ML/Roads/kuala_lumpur_roads.geojson"
 roads_gdf = gpd.read_file(road_path).to_crs(epsg=3857)
 
-# ✅ Build Simple Traffic Graph
 G = nx.Graph()
 for _, row in roads_gdf.iterrows():
     if hasattr(row.geometry, 'coords'):
@@ -24,8 +23,8 @@ for _, row in roads_gdf.iterrows():
 nodes = list(G.nodes)
 edges = list(G.edges)
 
-# ✅ Simulated Environment
-class TrafficEnv:
+# ✅ Simulated Traffic Environment
+class TrafficEnvironment:
     def __init__(self, G):
         self.G = G
         self.reset()
@@ -36,14 +35,12 @@ class TrafficEnv:
         return self.state
 
     def step(self, action):
-        # Action: choose one edge to optimize
         edge = list(self.G.edges)[action]
         self.traffic[edge] = max(1, self.traffic[edge] - random.randint(1, 3))
 
-        reward = -sum(self.traffic.values())  # lower total traffic = better
+        reward = -sum(self.traffic.values())
         next_state = np.array(list(self.traffic.values()), dtype=np.float32)
         done = False
-
         return next_state, reward, done
 
     def action_space(self):
@@ -52,7 +49,7 @@ class TrafficEnv:
     def state_dim(self):
         return len(self.G.edges)
 
-# ✅ Deep Q-Network
+# ✅ Deep Q-Network Model
 class DQN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(DQN, self).__init__()
@@ -65,9 +62,9 @@ class DQN(nn.Module):
         x = F.relu(self.fc2(x))
         return self.out(x)
 
-# ✅ Training Loop
+# ✅ RL Training Loop
 def train_rl():
-    env = TrafficEnv(G)
+    env = TrafficEnvironment(G)
     model = DQN(env.state_dim(), env.action_space()).cuda()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
     memory = deque(maxlen=10000)
