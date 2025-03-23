@@ -1,0 +1,111 @@
+Title: Summary of Urban Features in Kuala Lumpur (Cityscape-Ai)
+
+This document summarizes 17 urban spatial features extracted from OpenStreetMap for use in Cityscape-Ai’s graph-based modeling with GNN and reinforcement learning. These features were mapped to road nodes for enriched spatial analysis.
+
+⸻
+
+1. Land Use
+
+📄 File: kuala_lumpur_landuse.geojson
+• Zones include residential, commercial, industrial, parks, etc.
+• Helps model population density and zoning behavior.
+
+2. Buildings
+
+📄 File: kuala_lumpur_buildings.geojson
+• 3D footprints of built structures.
+• Used for assessing density, accessibility, and infrastructure spread.
+
+3. Points of Interest (POIs)
+
+📄 File: kuala_lumpur_pois.geojson
+• Covers restaurants, banks, schools, offices, etc.
+• Boosts semantic understanding of surrounding road segments.
+
+4. Healthcare Facilities
+
+📄 File: kuala_lumpur_healthcare.geojson
+• Hospitals, clinics, and pharmacies.
+• Enables analysis of medical service coverage.
+
+5. Emergency Services
+
+📄 File: kuala_lumpur_emergency.geojson
+• Police stations and fire stations.
+• Useful in modeling public safety zones and response optimization.
+
+6. Waste & Recycling
+
+📄 File: kuala_lumpur_waste.geojson
+• Waste disposal, treatment, and recycling centers.
+• Supports urban cleanliness and infrastructure planning.
+
+7. Power Infrastructure
+
+📄 File: kuala_lumpur_power.geojson
+• Power stations, substations, and grid structures.
+• May aid in resilience planning and energy flow optimization.
+
+8. Water Bodies
+
+📄 File: kuala_lumpur_water.geojson
+• Rivers, lakes, ponds, and canals.
+• Influences drainage modeling and land-use planning.
+
+9. Environmental Zones
+
+📄 File: kuala_lumpur_environment.geojson
+• Forests, parks, and green belts.
+• Important for urban ecology and green infrastructure assessment.
+
+10. Flood-Prone Zones
+
+📄 File: kuala_lumpur_flood_zones.geojson
+• Highlights high-risk flood areas and elevation data.
+• Critical for climate adaptation and hazard mapping.
+
+11. Parking Areas
+
+📄 File: kuala_lumpur_parking.geojson
+• Street-side and structured parking locations.
+• Useful in modeling congestion and last-mile access.
+
+12. Public Transport Stops
+
+📄 File: kuala_lumpur_public_transport.geojson
+• General nodes related to the public transport network.
+• Enhances modeling of mobility and multimodal access.
+
+13. Bus Stops
+
+📄 File: kuala_lumpur_bus_stops.geojson
+• Precise bus stop locations.
+• Used to assess service frequency and coverage areas.
+
+14. Train Stations
+
+📄 File: kuala_lumpur_train_stations.geojson
+• Subway entrances and railway stations.
+• Key for analyzing connectivity between urban hubs.
+
+15. Railways
+
+📄 File: kuala_lumpur_railways.geojson
+• Tracks, rail lines, and routes.
+• Adds transportation layer diversity in analysis.
+
+16. Bicycle Paths
+
+📄 File: kuala_lumpur_bicycle_paths.geojson
+• Dedicated cycleways and shared footways.
+• Supports sustainability-focused transport planning.
+
+17. Streetlights
+
+📄 File: kuala_lumpur_streetlights.geojson
+• Public lighting infrastructure mapped as point data.
+• Can be used for safety modeling and nighttime visibility estimation.
+
+⸻
+
+All datasets were converted to EPSG:3857 projection and integrated into the graph representation where each node may be tagged with one or more of the above features as binary indicators.

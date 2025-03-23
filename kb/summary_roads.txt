@@ -1,0 +1,28 @@
+Title: Summary of Road-Related Features in Kuala Lumpur (Cityscape-Ai)
+
+1. Road Network (kuala_lumpur_roads.geojson)
+	•	~109,738 road segments (edges) mapped into a graph.
+	•	Geometries: LineStrings connecting road intersections (nodes).
+	•	CRS: EPSG:3857 (Web Mercator).
+	•	Some attributes skipped due to format: highway type, speed limits, lanes, etc.
+	•	Enables spatial graph construction for GNN training.
+
+2. Traffic Information (kuala_lumpur_road_traffic.geojson)
+	•	Extracts road segments with available maxspeed, lanes, highway type data.
+	•	Useful for estimating congestion risk or lane capacity.
+	•	Directly supports RL agent decisions in traffic optimization.
+
+3. Bicycle & Foot Paths (kuala_lumpur_bicycle_paths.geojson)
+	•	Contains dedicated cycling and pedestrian paths.
+	•	Useful for modeling non-motorized traffic accessibility.
+
+4. Bus Stops & Public Transport (kuala_lumpur_bus_stops.geojson, kuala_lumpur_public_transport.geojson)
+	•	Over 5,000 bus stop points mapped.
+	•	Enhances multi-modal traffic simulations and accessibility analysis.
+
+5. Train & Rail (kuala_lumpur_railways.geojson, kuala_lumpur_train_stations.geojson)
+	•	Train lines (geometry) and stations (points) integrated for modeling transit-heavy corridors.
+
+6. Streetlights (kuala_lumpur_streetlights.geojson)
+	•	Road safety proxy in lower-lit or dense areas.
+	•	Enhances safety-aware road prioritization models.

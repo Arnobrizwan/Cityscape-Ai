@@ -1,0 +1,24 @@
+Title: GNN Model Overview (Cityscape-Ai)
+
+The Graph Neural Network (GNN) model is designed to analyze road networks in Kuala Lumpur using 18 spatial urban features such as land use, building footprints, public transport, healthcare, and more.
+
+Purpose:
+To help predict road-level conditions—such as potential congestion or spatial importance—based on urban infrastructure patterns.
+
+How It Works:
+	•	Each road intersection is treated as a node, and road segments as edges.
+	•	18 features were preprocessed and assigned to nodes as binary indicators (e.g., presence of a bus stop = 1).
+	•	A two-layer Graph Convolutional Network (GCN) was used to learn from the graph’s structure and node features.
+
+Training Info:
+	•	Nodes: 101,489
+	•	Edges: 109,738
+	•	Epochs: 100
+	•	Loss: Mean Squared Error (MSE) with synthetic targets
+	•	Device: CUDA/MPS/CPU fallback for compatibility
+
+Model Output:
+Predicts a continuous value per node (e.g., importance, traffic potential, influence).
+
+Model Path:
+ML/trained_gnn_model.pth

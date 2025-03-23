@@ -1,0 +1,35 @@
+Title: Reinforcement Learning (RL) Model Summary – Cityscape-Ai
+
+The Cityscape-Ai system includes a Deep Q-Network (DQN) reinforcement learning model trained to optimize urban traffic flow across Kuala Lumpur’s road network.
+
+⸻
+
+Purpose
+
+To reduce overall congestion by intelligently prioritizing road segments (edges) for optimization based on simulated traffic conditions.
+
+⸻
+
+How It Works
+	•	Simulates traffic intensity on each road segment.
+	•	At each step, the model selects a segment to optimize (e.g., reduce congestion).
+	•	Learns over time which segments yield the most improvement when targeted.
+
+⸻
+
+Training Overview
+	•	Episodes: 100
+	•	State: Simulated traffic levels across all road edges
+	•	Action: Choose one edge to optimize
+	•	Reward: Negative of total traffic (lower traffic = higher reward)
+	•	Goal: Minimize cumulative traffic over time
+
+⸻
+
+Output
+
+A trained policy capable of identifying the most impactful edges to optimize under simulated urban conditions.
+
+⸻
+
+Model Path: ML/trained_rl_model.pth

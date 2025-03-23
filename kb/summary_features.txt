@@ -1,0 +1,46 @@
+This dataset includes 18 types of urban features extracted from Kuala Lumpur, Malaysia using OpenStreetMap data. Each feature is stored as a GeoJSON file and used to support AI models for urban analysis and traffic optimization.
+
+⸻
+
+📍 Roads
+	1.	Road Network – All drivable streets and intersections.
+	2.	Traffic Attributes – Speed limits, number of lanes, bridges, tunnels, and road references.
+
+🏢 Buildings
+3. Building Structures – Residential, commercial, and industrial buildings.
+
+🗺️ Land Use
+4. Land Use Zones – Areas categorized by residential, commercial, parkland, etc.
+
+🚌 Transport Infrastructure
+5. Railways – Rail lines and metro tracks.
+6. Bus Stops – Designated bus boarding points.
+7. Train Stations – Metro and railway station entries.
+8. Public Transport Systems – General transit infrastructure.
+9. Bicycle Paths & Footways – Dedicated cycling and walking lanes.
+10. Parking Areas – Urban parking facilities.
+
+⚡ Utilities
+11. Streetlights – Public road and area lighting.
+12. Emergency Services – Police stations and fire departments.
+13. Healthcare – Hospitals, clinics, and pharmacies.
+14. Power Infrastructure – Electric grid-related structures.
+15. Waste Management – Recycling centers and disposal facilities.
+
+🌿 Environment
+16. Parks & Nature – Parks, green areas, and natural zones.
+17. Water Bodies – Rivers, streams, and water-based areas.
+18. Flood Zones – Regions marked as prone to flooding.
+
+⸻
+
+📂 Folder Structure
+All data is stored under the ML/ directory and organized into:
+	•	ML/Roads/
+	•	ML/Buildings/
+	•	ML/Transport/
+	•	ML/Utilities/
+	•	ML/Environment/
+	•	ML/Landuse/
+
+These features form the knowledge base and are used by GNN and RL models to answer urban planning queries and optimize traffic in the Cityscape-Ai project.

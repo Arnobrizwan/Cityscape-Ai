@@ -1,0 +1,25 @@
+Title: Traffic Optimization Strategies in Cityscape-Ai
+
+Cityscape-Ai applies advanced AI techniques (Graph Neural Networks and Reinforcement Learning) to simulate and optimize traffic in Kuala Lumpur. The following strategies guide its decision-making process:
+
+⸻
+
+1. Prioritize High-Traffic Segments
+
+Identify and target road segments (edges) with consistently high simulated traffic volumes. These are prioritized in the RL optimization loop for intervention.
+
+2. Adaptive Reinforcement Learning Policies
+
+The RL agent dynamically adjusts traffic conditions (e.g., signal timing or flow direction) based on real-time reward feedback. This helps in reducing congestion across the network.
+
+3. Target Bottlenecks via Centrality Metrics
+
+Graph centrality (e.g., betweenness) is used to detect and monitor critical intersections. Optimizing these nodes improves overall road network efficiency.
+
+4. GNN-RL Fusion for Smarter Control
+
+Node influence scores from the GNN model are combined with RL policies. This hybrid approach enables more context-aware decision making across spatial regions.
+
+5. Hybrid Control Techniques
+
+Cityscape-Ai supports integrating multiple strategies—such as smart traffic light control, route redirection, and congestion pricing—for layered and adaptive traffic management.
