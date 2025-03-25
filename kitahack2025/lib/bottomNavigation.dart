@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:kitahack2025/Dashboard/dashboardPage.dart';
+import 'package:kitahack2025/AI/aiPage.dart';
+import 'package:kitahack2025/Map/mapPage.dart';
+import 'package:kitahack2025/Settings/settingPage.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class BottomNaivgation extends StatefulWidget {
@@ -11,6 +15,12 @@ class BottomNaivgation extends StatefulWidget {
 
 class _BottomNaivgationState
     extends State<BottomNaivgation> {
+  List<Widget> pageSelection = [
+    DashboardPage(),
+    MapPage(),
+    AIPage(),
+    SettingPage(),
+  ];
   int onSelected = 0;
   @override
   Widget build(BuildContext context) {
@@ -18,134 +28,143 @@ class _BottomNaivgationState
       child: Scaffold(
         body: Column(
           children: [
-            Row(
-              children: [
-                // Dashboard
-                GestureDetector(
-                  onTap:
-                      () => {
-                        setState(() {
-                          onSelected = 0;
-                        }),
-                      },
-                  child: Column(
-                    children: [
-                      PhosphorIcon(
-                        PhosphorIconsRegular
-                            .presentationChart,
-                        color:
-                            onSelected == 0
-                                ? Colors.amber
-                                : Colors.black,
-                      ),
-                      Text(
-                        'Dashboard',
-                        style: TextStyle(
-                          fontSize: 10,
-                          wordSpacing: 1,
+            Expanded(child: pageSelection[onSelected]),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: 5,
+              ),
+              child: Row(
+                mainAxisAlignment:
+                    MainAxisAlignment.spaceEvenly,
+                children: [
+                  // Dashboard
+                  GestureDetector(
+                    onTap:
+                        () => {
+                          setState(() {
+                            onSelected = 0;
+                          }),
+                        },
+                    child: Column(
+                      children: [
+                        PhosphorIcon(
+                          PhosphorIconsRegular
+                              .presentationChart,
                           color:
                               onSelected == 0
                                   ? Colors.amber
                                   : Colors.black,
+                          size: 30,
                         ),
-                      ),
-                    ],
-                  ),
-                ), // Dashboard
-                GestureDetector(
-                  onTap:
-                      () => {
-                        setState(() {
-                          onSelected = 0;
-                        }),
-                      },
-                  child: Column(
-                    children: [
-                      PhosphorIcon(
-                        PhosphorIconsRegular
-                            .presentationChart,
-                        color:
-                            onSelected == 0
-                                ? Colors.amber
-                                : Colors.black,
-                      ),
-                      Text(
-                        'Dashboard',
-                        style: TextStyle(
-                          fontSize: 10,
-                          wordSpacing: 1,
+                        Text(
+                          'Dashboard',
+                          style: TextStyle(
+                            fontSize: 15,
+                            wordSpacing: 1,
+                            color:
+                                onSelected == 0
+                                    ? Colors.amber
+                                    : Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ), // Map
+                  GestureDetector(
+                    onTap:
+                        () => {
+                          setState(() {
+                            onSelected = 1;
+                          }),
+                        },
+                    child: Column(
+                      children: [
+                        PhosphorIcon(
+                          PhosphorIconsRegular.mapTrifold,
+                          size: 30,
                           color:
-                              onSelected == 0
+                              onSelected == 1
                                   ? Colors.amber
                                   : Colors.black,
                         ),
-                      ),
-                    ],
-                  ),
-                ), // Dashboard
-                GestureDetector(
-                  onTap:
-                      () => {
-                        setState(() {
-                          onSelected = 0;
-                        }),
-                      },
-                  child: Column(
-                    children: [
-                      PhosphorIcon(
-                        PhosphorIconsRegular
-                            .presentationChart,
-                        color:
-                            onSelected == 0
-                                ? Colors.amber
-                                : Colors.black,
-                      ),
-                      Text(
-                        'Dashboard',
-                        style: TextStyle(
-                          fontSize: 10,
-                          wordSpacing: 1,
+                        Text(
+                          'Map',
+                          style: TextStyle(
+                            fontSize: 15,
+                            wordSpacing: 1,
+                            color:
+                                onSelected == 1
+                                    ? Colors.amber
+                                    : Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ), // AI
+                  GestureDetector(
+                    onTap:
+                        () => {
+                          setState(() {
+                            onSelected = 2;
+                          }),
+                        },
+                    child: Column(
+                      children: [
+                        PhosphorIcon(
+                          PhosphorIconsRegular.openAiLogo,
+                          size: 30,
                           color:
-                              onSelected == 0
+                              onSelected == 2
                                   ? Colors.amber
                                   : Colors.black,
                         ),
-                      ),
-                    ],
-                  ),
-                ), // Dashboard
-                GestureDetector(
-                  onTap:
-                      () => {
-                        setState(() {
-                          onSelected = 0;
-                        }),
-                      },
-                  child: Column(
-                    children: [
-                      PhosphorIcon(
-                        PhosphorIconsRegular
-                            .presentationChart,
-                        color:
-                            onSelected == 0
-                                ? Colors.amber
-                                : Colors.black,
-                      ),
-                      Text(
-                        'Dashboard',
-                        style: TextStyle(
-                          fontSize: 10,
-                          wordSpacing: 1,
+                        Text(
+                          'AI',
+                          style: TextStyle(
+                            fontSize: 15,
+                            wordSpacing: 1,
+                            color:
+                                onSelected == 2
+                                    ? Colors.amber
+                                    : Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ), // Settings
+                  GestureDetector(
+                    onTap:
+                        () => {
+                          setState(() {
+                            onSelected = 3;
+                          }),
+                        },
+                    child: Column(
+                      children: [
+                        PhosphorIcon(
+                          PhosphorIconsRegular.gear,
+                          size: 30,
                           color:
-                              onSelected == 0
+                              onSelected == 3
                                   ? Colors.amber
                                   : Colors.black,
                         ),
-                      ),
-                    ],
+                        Text(
+                          'Settings',
+                          style: TextStyle(
+                            fontSize: 15,
+                            wordSpacing: 1,
+                            color:
+                                onSelected == 3
+                                    ? Colors.amber
+                                    : Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),

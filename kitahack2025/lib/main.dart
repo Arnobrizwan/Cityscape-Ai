@@ -1,11 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:kitahack2025/Home/dashboardPage.dart';
 import 'package:kitahack2025/bottomNavigation.dart';
-import 'package:kitahack2025/firstPage.dart';
-import 'package:kitahack2025/googleMapPage.dart';
-import 'package:kitahack2025/homePage.dart';
-import 'package:kitahack2025/loginPage.dart';
 import "firebase_options.dart";
 
 void main() async {
