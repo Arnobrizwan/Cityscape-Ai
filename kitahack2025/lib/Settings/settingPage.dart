@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitahack2025/LoginPage/authentication.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class SettingPage extends StatefulWidget {
@@ -12,6 +13,7 @@ class _SettingPageState extends State<SettingPage> {
   int onTap = 0;
   bool _darkSwitch = false;
   bool _notificationSwitch = false;
+  final AuthService _authService = AuthService();
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -245,6 +247,37 @@ class _SettingPageState extends State<SettingPage> {
                           "Save Changes",
                           style: TextStyle(
                             color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 50),
+                  GestureDetector(
+                    onTap: () {
+                      _authService.signOut(
+                        context: context,
+                      );
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.circular(
+                          10,
+                        ),
+                      ),
+                      child: Center(
+                        child: Padding(
+                          padding:
+                              const EdgeInsets.symmetric(
+                                vertical: 10,
+                              ),
+                          child: Text(
+                            "Log out",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),

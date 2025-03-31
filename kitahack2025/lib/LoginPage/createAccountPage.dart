@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitahack2025/LoginPage/accessPage.dart';
 import 'package:kitahack2025/LoginPage/authentication.dart';
+import 'package:kitahack2025/bottomNavigation.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class CreateAccountPage extends StatefulWidget {

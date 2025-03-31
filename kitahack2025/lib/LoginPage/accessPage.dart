@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitahack2025/LoginPage/authentication.dart';
 import 'package:kitahack2025/LoginPage/createAccountPage.dart';
+import 'package:kitahack2025/LoginPage/forgetPasswordPage.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class AccessPage extends StatefulWidget {
@@ -123,7 +124,17 @@ class _AccessPageState extends State<AccessPage> {
                   ),
                   SizedBox(height: 15),
                   GestureDetector(
-                    onTap: () => {},
+                    onTap:
+                        () => {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder:
+                                  (context) =>
+                                      Forgetpasswordpage(),
+                            ),
+                          ),
+                        },
                     child: Text(
                       'Forgot your password?',
                       style: TextStyle(color: Colors.amber),
