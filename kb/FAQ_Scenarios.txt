@@ -1,0 +1,8 @@
+Q: Can Cityscape-Ai monitor public transport?
+A: Yes, it integrates bus stops, train stations, and public transport routes into its traffic modeling.
+
+Q: Does Cityscape-Ai work in real-time?
+A: Yes, the system can be connected to real-time traffic feeds and sensor data for adaptive response.
+
+Q: Is it limited to Kuala Lumpur?
+A: Currently focused on KL, but the architecture is scalable to other cities with similar datasets.

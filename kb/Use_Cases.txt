@@ -1,0 +1,5 @@
+Use Cases of Cityscape-Ai:
+1. **Emergency Routing:** During floods or accidents, Cityscape-Ai finds optimal paths for ambulances and emergency vehicles.
+2. **Public Transport Optimization:** By analyzing bus stop demand and traffic, it adjusts suggested routes for buses to avoid congestion.
+3. **Pollution Reduction:** It indirectly reduces CO2 emissions by minimizing idle time at traffic signals and promoting bike paths and public transport.
+4. **Disaster Response:** Cityscape-Ai integrates elevation and flood zone data to reroute traffic in real time during flash floods.

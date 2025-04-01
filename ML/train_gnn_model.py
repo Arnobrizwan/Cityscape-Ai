@@ -132,3 +132,9 @@ print("🎉 Training Complete & Model Saved!")
 
 # ✅ GPU Memory Usage Check (Run after training)
 print(f"📊 Final GPU Memory Usage: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
+# ✅ Save GNN predictions for chatbot integration
+model.eval()
+with torch.no_grad():
+    predictions = model(graph_data)  # shape: [num_nodes, 1]
+    torch.save(predictions, os.path.join(ml_folder_path, "gnn_predictions.pt"))
+    print("📦 GNN predictions saved to ML/gnn_predictions.pt")
