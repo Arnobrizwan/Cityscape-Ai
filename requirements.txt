@@ -1,0 +1,12 @@
+geopandas==1.0.1
+matplotlib==3.10.1
+networkx==3.2.1
+numpy==2.2.4
+osmnx==2.0.2
+pandas==2.2.3
+scikit-learn==1.6.1
+seaborn==0.13.2
+sentence-transformers==4.0.1
+torch==2.6.0
+torch-geometric==2.6.1
+google-generativeai==0.3.2

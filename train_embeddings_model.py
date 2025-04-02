@@ -122,7 +122,7 @@ def fine_tune_model(base_model_name="all-MiniLM-L6-v2", epochs=10, batch_size=16
     os.makedirs(output_dir, exist_ok=True)
     
     # Save the model
-    model.save(output_dir)
+    model.save(output_dir, create_model_card=True)
     logging.info(f"💾 Model saved to {output_dir}")
     
     return model
