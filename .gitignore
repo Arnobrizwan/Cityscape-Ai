@@ -1,8 +1,12 @@
 # Ignore all GeoJSON files (unless you want to version control them)
 *.geojson
 
-# Ignore ML model checkpoints & logs
-!ML/trained_gnn_model.pth  # ✅ Allow trained model
+# ✅ Allow specific trained embedding model
+!ML/trained_embeddings_model/**
+!ML/trained_embeddings_model
+
+# Ignore other ML model checkpoints & logs
+!ML/trained_gnn_model.pth  # ✅ Allow trained GNN model
 ML/checkpoints/
 ML/logs/
 
@@ -27,7 +31,7 @@ Pipfile.lock
 # Ignore Jupyter Notebook checkpoints (if using notebooks)
 .ipynb_checkpoints/
 
-# Ignore environment variables and config files
+# Ignore environment variables and sensitive config files
 .env
 config.json
 credentials.json
