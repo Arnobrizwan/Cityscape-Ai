@@ -4,35 +4,60 @@ tags:
 - sentence-similarity
 - feature-extraction
 - generated_from_trainer
-- dataset_size:96
+- dataset_size:144
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/all-MiniLM-L6-v2
 widget:
-- source_sentence: '📄 File: kuala_lumpur_healthcare.geojson
-
-    • Hospitals, clinics, and pharmacies.
-
-    • Enables analysis of medical service coverage.'
+- source_sentence: ⸻
   sentences:
+  - '📄 File: kuala_lumpur_flood_zones.geojson
+
+    • Highlights high-risk flood areas and elevation data.
+
+    • Critical for climate adaptation and hazard mapping.'
   - "Training Overview\n\t•\tEpisodes: 100\n\t•\tState: Simulated traffic levels across\
     \ all road edges\n\t•\tAction: Choose one edge to optimize\n\t•\tReward: Negative\
     \ of total traffic (lower traffic = higher reward)\n\t•\tGoal: Minimize cumulative\
     \ traffic over time"
-  - 17. Streetlights
-  - 5. Emergency Services
-- source_sentence: '⚡ Utilities
-
-    11. Streetlights – Public road and area lighting.
-
-    12. Emergency Services – Police stations and fire departments.
-
-    13. Healthcare – Hospitals, clinics, and pharmacies.
-
-    14. Power Infrastructure – Electric grid-related structures.
-
-    15. Waste Management – Recycling centers and disposal facilities.'
+  - To reduce overall congestion by intelligently prioritizing road segments (edges)
+    for optimization based on simulated traffic conditions.
+- source_sentence: 'Title: Reinforcement Learning (RL) Model Summary – Cityscape-Ai'
   sentences:
-  - ⸻
+  - Kuala Lumpur Road Traffic
+  - These features form the knowledge base and are used by GNN and RL models to answer
+    urban planning queries and optimize traffic in the Cityscape-Ai project.
+  - This dataset includes 18 types of urban features extracted from Kuala Lumpur,
+    Malaysia using OpenStreetMap data. Each feature is stored as a GeoJSON file and
+    used to support AI models for urban analysis and traffic optimization.
+- source_sentence: "Training Info:\n\t•\tNodes: 101,489\n\t•\tEdges: 109,738\n\t•\t\
+    Epochs: 100\n\t•\tLoss: Mean Squared Error (MSE) with synthetic targets\n\t•\t\
+    Device: CUDA/MPS/CPU fallback for compatibility"
+  sentences:
+  - 'Model Output:
+
+    Predicts a continuous value per node (e.g., importance, traffic potential, influence).'
+  - '📄 File: kuala_lumpur_pois.geojson
+
+    • Covers restaurants, banks, schools, offices, etc.
+
+    • Boosts semantic understanding of surrounding road segments.'
+  - "How It Works:\n\t•\tEach road intersection is treated as a node, and road segments\
+    \ as edges.\n\t•\t18 features were preprocessed and assigned to nodes as binary\
+    \ indicators (e.g., presence of a bus stop = 1).\n\t•\tA two-layer Graph Convolutional\
+    \ Network (GCN) was used to learn from the graph’s structure and node features."
+- source_sentence: The presence of power infrastructure such as substations and high-voltage
+    lines in Cityscape-Ai enables urban resilience planning. It allows identification
+    of critical power zones that must remain accessible during traffic rerouting,
+    disaster events, or maintenance operations.
+  sentences:
+  - 2. Buildings
+  - Kuala Lumpur Healthcare
+  - 'Title: Traffic Optimization Strategies in Cityscape-Ai'
+- source_sentence: '🗺️ Land Use
+
+    4. Land Use Zones – Areas categorized by residential, commercial, parkland, etc.'
+  sentences:
+  - Kuala Lumpur Water
   - '🚌 Transport Infrastructure
 
     5. Railways – Rail lines and metro tracks.
@@ -46,47 +71,7 @@ widget:
     9. Bicycle Paths & Footways – Dedicated cycling and walking lanes.
 
     10. Parking Areas – Urban parking facilities.'
-  - '🌿 Environment
-
-    16. Parks & Nature – Parks, green areas, and natural zones.
-
-    17. Water Bodies – Rivers, streams, and water-based areas.
-
-    18. Flood Zones – Regions marked as prone to flooding.'
-- source_sentence: 15. Railways
-  sentences:
-  - '📄 File: kuala_lumpur_flood_zones.geojson
-
-    • Highlights high-risk flood areas and elevation data.
-
-    • Critical for climate adaptation and hazard mapping.'
-  - 3. Target Bottlenecks via Centrality Metrics
-  - '📄 File: kuala_lumpur_railways.geojson
-
-    • Tracks, rail lines, and routes.
-
-    • Adds transportation layer diversity in analysis.'
-- source_sentence: '📄 File: kuala_lumpur_water.geojson
-
-    • Rivers, lakes, ponds, and canals.
-
-    • Influences drainage modeling and land-use planning.'
-  sentences:
-  - These features form the knowledge base and are used by GNN and RL models to answer
-    urban planning queries and optimize traffic in the Cityscape-Ai project.
-  - 9. Environmental Zones
-  - 5. Hybrid Control Techniques
-- source_sentence: 2. Adaptive Reinforcement Learning Policies
-  sentences:
-  - 'Title: Summary of Urban Features in Kuala Lumpur (Cityscape-Ai)'
-  - '📄 File: kuala_lumpur_buildings.geojson
-
-    • 3D footprints of built structures.
-
-    • Used for assessing density, accessibility, and infrastructure spread.'
-  - The RL agent dynamically adjusts traffic conditions (e.g., signal timing or flow
-    direction) based on real-time reward feedback. This helps in reducing congestion
-    across the network.
+  - 4. GNN-RL Fusion for Smarter Control
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
@@ -141,9 +126,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    '2. Adaptive Reinforcement Learning Policies',
-    'The RL agent dynamically adjusts traffic conditions (e.g., signal timing or flow direction) based on real-time reward feedback. This helps in reducing congestion across the network.',
-    '📄 File: kuala_lumpur_buildings.geojson\n• 3D footprints of built structures.\n• Used for assessing density, accessibility, and infrastructure spread.',
+    '🗺️ Land Use\n4. Land Use Zones – Areas categorized by residential, commercial, parkland, etc.',
+    '🚌 Transport Infrastructure\n5. Railways – Rail lines and metro tracks.\n6. Bus Stops – Designated bus boarding points.\n7. Train Stations – Metro and railway station entries.\n8. Public Transport Systems – General transit infrastructure.\n9. Bicycle Paths & Footways – Dedicated cycling and walking lanes.\n10. Parking Areas – Urban parking facilities.',
+    'Kuala Lumpur Water',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -197,19 +182,19 @@ You can finetune this model on your own dataset.
 
 #### Unnamed Dataset
 
-* Size: 96 training samples
+* Size: 144 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
-* Approximate statistics based on the first 96 samples:
-  |         | sentence_0                                                                        | sentence_1                                                                        | label                                                          |
-  |:--------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:---------------------------------------------------------------|
-  | type    | string                                                                            | string                                                                            | float                                                          |
-  | details | <ul><li>min: 3 tokens</li><li>mean: 25.54 tokens</li><li>max: 93 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 25.52 tokens</li><li>max: 93 tokens</li></ul> | <ul><li>min: 0.3</li><li>mean: 0.87</li><li>max: 0.9</li></ul> |
+* Approximate statistics based on the first 144 samples:
+  |         | sentence_0                                                                        | sentence_1                                                                         | label                                                          |
+  |:--------|:----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------|
+  | type    | string                                                                            | string                                                                             | float                                                          |
+  | details | <ul><li>min: 3 tokens</li><li>mean: 28.2 tokens</li><li>max: 122 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 28.28 tokens</li><li>max: 134 tokens</li></ul> | <ul><li>min: 0.3</li><li>mean: 0.86</li><li>max: 0.9</li></ul> |
 * Samples:
-  | sentence_0                                                                                                                                                                                                                                               | sentence_1                                                                                                                                      | label            |
-  |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
-  | <code>How It Works<br>	•	Simulates traffic intensity on each road segment.<br>	•	At each step, the model selects a segment to optimize (e.g., reduce congestion).<br>	•	Learns over time which segments yield the most improvement when targeted.</code> | <code>⸻</code>                                                                                                                                  | <code>0.9</code> |
-  | <code>Model Path: ML/trained_rl_model.pth</code>                                                                                                                                                                                                         | <code>Title: Reinforcement Learning (RL) Model Summary – Cityscape-Ai</code>                                                                    | <code>0.9</code> |
-  | <code>8. Water Bodies</code>                                                                                                                                                                                                                             | <code>📄 File: kuala_lumpur_water.geojson<br>• Rivers, lakes, ponds, and canals.<br>• Influences drainage modeling and land-use planning.</code> | <code>0.9</code> |
+  | sentence_0                                                                                                                                                                                            | sentence_1                                                                                                                                                                                                                                                                                                      | label            |
+  |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
+  | <code>5. Train & Rail (kuala_lumpur_railways.geojson, kuala_lumpur_train_stations.geojson)<br>	•	Train lines (geometry) and stations (points) integrated for modeling transit-heavy corridors.</code> | <code>6. Streetlights (kuala_lumpur_streetlights.geojson)<br>	•	Road safety proxy in lower-lit or dense areas.<br>	•	Enhances safety-aware road prioritization models.</code>                                                                                                                                   | <code>0.9</code> |
+  | <code>⸻</code>                                                                                                                                                                                        | <code>Purpose</code>                                                                                                                                                                                                                                                                                            | <code>0.9</code> |
+  | <code>Kuala Lumpur Railways</code>                                                                                                                                                                    | <code>Railway lines and infrastructure including tracks and logistics corridors are used by Cityscape-Ai to support multimodal transportation models. This helps integrate train schedules and capacities into the overall traffic simulation and optimize coordination between road and rail transport.</code> | <code>0.9</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
