@@ -1,0 +1,81 @@
+Kuala Lumpur Roads
+
+Cityscape-Ai leverages the detailed road network of Kuala Lumpur, including all driveable streets, intersections, and connections. The road graph is used to simulate traffic flow and optimize routes using advanced AI techniques such as Graph Neural Networks (GNN). This enables real-time analysis of bottlenecks, high-traffic zones, and alternative routing strategies to improve overall urban mobility.
+
+Cityscape-Ai also uses GNN output predictions to identify critical road segments that may require rerouting, upgrades, or closer monitoring. These predictive insights are embedded in the chatbot, enabling it to respond to user queries with current road priorities and optimization status.
+
+Kuala Lumpur Road Traffic
+
+Cityscape-Ai integrates traffic-specific attributes such as speed limits, number of lanes, and road classifications into its traffic models. These attributes allow the system to accurately simulate congestion levels, identify traffic violations, and suggest optimized traffic signal timings. It can also adapt routing suggestions based on real-time speed changes, lane closures, or traffic incidents.
+
+GNN fine-tuning enables Cityscape-Ai to predict which roads are likely to experience congestion under specific conditions, allowing the chatbot to answer questions about future bottlenecks or traffic hotspots.
+
+Kuala Lumpur Buildings
+
+Cityscape-Ai maps all types of buildings in Kuala Lumpur including residential, commercial, and industrial structures. This data supports urban planning simulations, energy consumption modeling, and emergency response planning. It also helps in determining the accessibility of buildings from major roads and estimating population density for better traffic prediction.
+
+Kuala Lumpur Landuse
+
+Cityscape-Ai incorporates land use data to distinguish between residential, commercial, industrial, agricultural, and recreational areas. This helps prioritize infrastructure investments and develop zoning-based traffic models. By analyzing land use patterns, the system can also predict peak hours in specific zones and suggest public transport improvements accordingly.
+
+Kuala Lumpur POIs
+
+Points of Interest (POIs) such as hospitals, schools, malls, and government buildings are used in Cityscape-Ai to model real-world human behavior and mobility patterns. POIs contribute to hotspot analysis, emergency evacuation planning, and identification of zones with high pedestrian or vehicle density.
+
+Kuala Lumpur Environment
+
+Environmental data such as parks, green areas, water bodies, and natural zones are included in Cityscape-Ai to assess urban sustainability. These features support analyses related to heat islands, noise pollution reduction, and air quality improvement through green corridor planning. This data is also critical for flood simulation models and ecological impact assessments.
+
+Kuala Lumpur Water
+
+Cityscape-Ai uses waterway data including rivers, canals, and lakes to model urban drainage and flood risk. This supports emergency planning and infrastructure upgrades in flood-prone areas. Water proximity also affects road usability and transport safety during extreme weather conditions.
+
+Kuala Lumpur Railways
+
+Railway lines and infrastructure including tracks and logistics corridors are used by Cityscape-Ai to support multimodal transportation models. This helps integrate train schedules and capacities into the overall traffic simulation and optimize coordination between road and rail transport.
+
+Kuala Lumpur Power
+
+The presence of power infrastructure such as substations and high-voltage lines in Cityscape-Ai enables urban resilience planning. It allows identification of critical power zones that must remain accessible during traffic rerouting, disaster events, or maintenance operations.
+
+Kuala Lumpur Healthcare
+
+Cityscape-Ai maps healthcare facilities such as hospitals, clinics, and pharmacies to optimize emergency vehicle routing and accessibility. This data is used to create priority lanes, simulate medical response scenarios, and ensure that critical services are reachable even during peak traffic or disasters.
+
+Kuala Lumpur Emergency
+
+Police stations and fire stations are mapped in Cityscape-Ai to support emergency preparedness and rapid response strategies. The system ensures these critical facilities are not traffic-bottlenecked and models the shortest evacuation and intervention paths.
+
+Kuala Lumpur Parking
+
+Parking infrastructure data is used by Cityscape-Ai to optimize traffic congestion around commercial areas, regulate vehicle flow, and manage dynamic parking pricing. It also supports planning for smart parking systems and identifying underutilized parking zones.
+
+Kuala Lumpur Waste
+
+Waste disposal and recycling facility locations help Cityscape-Ai model daily service vehicle routes and support environmental policy implementations. It helps optimize waste collection paths to minimize traffic disruption and fuel consumption.
+
+Kuala Lumpur Public Transport
+
+Cityscape-Ai integrates public transport data including routes, service zones, and transfer points for buses, trains, and other public modes. This supports route optimization for commuters, identifies underserved areas, and aligns public transport availability with traffic congestion data.
+
+Kuala Lumpur Bus Stops
+
+Bus stops are mapped with detailed metadata such as route IDs, proximity to POIs, and boarding frequency. Cityscape-Ai uses this data to plan high-demand corridors, improve waiting time estimates, and simulate urban mobility flows based on bus-dependent commuters.
+
+Kuala Lumpur Train Stations
+
+Cityscape-Ai uses train station data, including station type and connectivity, to enable multimodal traffic modeling and simulate realistic commuting paths. It helps determine catchment areas, peak hour flows, and integration points with buses and private transport.
+
+Kuala Lumpur Bicycle Paths
+
+Cityscape-Ai includes cycleways and footways to simulate pedestrian and cyclist movements. This supports planning for non-motorized transport safety, encourages low-carbon commuting alternatives, and helps identify gaps in pedestrian-friendly infrastructure.
+
+Kuala Lumpur Streetlights
+
+Street lighting data is used in Cityscape-Ai for nighttime safety analysis, energy usage estimation, and visual accessibility modeling. This information helps assess risk zones and design smart lighting systems synchronized with traffic activity.
+
+Kuala Lumpur Flood Zones
+
+Flood-prone areas and elevation data are used in Cityscape-Ai to model disaster scenarios, reroute traffic during floods, and guide infrastructure resilience planning. The model integrates elevation into route planning to avoid submerged or risky roads during rainfall.
+
+Cityscape-Ai chatbot is aware of these risk zones using the outputs from GNN and RL models, helping users plan safe journeys during weather alerts or high-risk conditions.

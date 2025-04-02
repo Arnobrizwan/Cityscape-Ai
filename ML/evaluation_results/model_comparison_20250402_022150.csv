@@ -1,0 +1,11 @@
+Query,Model,Average Score
+What is Cityscape-AI?,Base Model,0.6056893
+What is Cityscape-AI?,Fine-tuned Model,0.6442949
+How does Cityscape-AI help with traffic management?,Base Model,0.77632266
+How does Cityscape-AI help with traffic management?,Fine-tuned Model,0.80906725
+Can Cityscape-AI reduce pollution in cities?,Base Model,0.55621547
+Can Cityscape-AI reduce pollution in cities?,Fine-tuned Model,0.5948989
+What technologies does Cityscape-AI use?,Base Model,0.6003897
+What technologies does Cityscape-AI use?,Fine-tuned Model,0.651251
+How does Cityscape-AI handle emergency situations?,Base Model,0.5477197
+How does Cityscape-AI handle emergency situations?,Fine-tuned Model,0.59035176
