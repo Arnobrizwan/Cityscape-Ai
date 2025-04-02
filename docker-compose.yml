@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  chatbot:
+    image: arnob234/cityscape-chatbot:latest
+    container_name: cityscape-chatbot
+    restart: unless-stopped
+    env_file:
+      - .env
+    stdin_open: true        # allows interactive input
+    tty: true               # enables terminal input
