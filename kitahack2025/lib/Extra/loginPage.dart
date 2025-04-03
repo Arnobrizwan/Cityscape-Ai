@@ -47,12 +47,12 @@ class _LoginpageState extends State<Loginpage> {
             ElevatedButton(
               onPressed:
                   () => {
-                    _authService.authenticate(
-                      context: context,
-                      email: emailController.text,
-                      password: passwordController.text,
-                      isLogin: isLogin,
-                    ),
+                    // _authService.authenticate(
+                    //   context: context,
+                    //   email: emailController.text,
+                    //   password: passwordController.text,
+                    //   isLogin: isLogin,
+                    // ),
                   },
               child: Text(isLogin ? "Login" : "Sign Up"),
             ),

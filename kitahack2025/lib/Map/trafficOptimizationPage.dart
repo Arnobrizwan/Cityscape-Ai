@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kitahack2025/Map/stimulationPage.dart';
+import 'package:kitahack2025/bottomNavigation.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class TrafficOptimizationPage extends StatefulWidget {
@@ -29,7 +31,19 @@ class _TrafficOptimizationPageState
                       MainAxisAlignment.spaceBetween,
                   children: [
                     GestureDetector(
-                      onTap: () => {Navigator.pop(context)},
+                      onTap:
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder:
+                                    (context) =>
+                                        BottomNaivgation(
+                                          onSelect: 1,
+                                        ),
+                              ),
+                            ),
+                          },
                       child: PhosphorIcon(
                         PhosphorIconsRegular.arrowLeft,
                       ),
@@ -521,23 +535,35 @@ class _TrafficOptimizationPageState
                             child: Text('Image'),
                           ),
                         ),
-                        Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: Colors.amber,
-                            borderRadius:
-                                BorderRadius.circular(10),
-                          ),
-                          child: Center(
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(
-                                    vertical: 10,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder:
+                                    (context) =>
+                                        StimluationPage(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius:
+                                  BorderRadius.circular(10),
+                            ),
+                            child: Center(
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(
+                                      vertical: 10,
+                                    ),
+                                child: Text(
+                                  'Run Full Simulation',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
-                              child: Text(
-                                'Run Full Simulation',
-                                style: TextStyle(
-                                  color: Colors.white,
                                 ),
                               ),
                             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitahack2025/bottomNavigation.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class AIPage extends StatefulWidget {
@@ -23,8 +24,21 @@ class _AIPageState extends State<AIPage> {
               mainAxisAlignment:
                   MainAxisAlignment.spaceBetween,
               children: [
-                PhosphorIcon(
-                  PhosphorIconsRegular.arrowLeft,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (context) => BottomNaivgation(
+                              onSelect: 0,
+                            ),
+                      ),
+                    );
+                  },
+                  child: PhosphorIcon(
+                    PhosphorIconsRegular.arrowLeft,
+                  ),
                 ),
                 Text(
                   'AI Insights & Forecasting',

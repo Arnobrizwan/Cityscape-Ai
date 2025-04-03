@@ -66,7 +66,7 @@ class _BuildingComponentState
                     ),
                   ),
                   Switch(
-                    value: _buildingsSwitched,
+                    value: _roadsSwitched,
                     onChanged: (value) {
                       setState(() {
                         _roadsSwitched = value;
@@ -88,7 +88,7 @@ class _BuildingComponentState
                     ),
                   ),
                   Switch(
-                    value: _buildingsSwitched,
+                    value: _trafficSwitched,
                     onChanged: (value) {
                       setState(() {
                         _trafficSwitched = value;
@@ -113,7 +113,7 @@ class _BuildingComponentState
                     value: _environmentSwitched,
                     onChanged: (value) {
                       setState(() {
-                        _buildingsSwitched = value;
+                        _environmentSwitched = value;
                       });
                     },
                     activeColor: Colors.amber,
