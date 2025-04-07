@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/xds/xds_client/xds_bootstrap.cc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/Target\ Support\ Files/gRPC-Core/gRPC-Core-prefix.pch \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/xds/xds_client/xds_bootstrap.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/include/grpc/support/port_platform.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/util/json/json.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/include/grpc/support/json.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/str_cat.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/nullability.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/nullability_impl.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/has_absl_stringify.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/resize_uninitialized.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/internal/stringify_sink.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/numbers.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/endian.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/casts.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/unaligned_access.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/bits.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/internal/bits.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/int128.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/numeric/int128_have_intrinsic.inc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/variant.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/variant.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_variant_access.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/lib/gprpp/env.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/util/string.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/include/grpc/support/time.h

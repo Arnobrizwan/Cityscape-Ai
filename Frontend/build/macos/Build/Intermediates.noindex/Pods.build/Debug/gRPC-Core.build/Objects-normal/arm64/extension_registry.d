@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/include/grpc/module.modulemap \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/extension_registry.c \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/Target\ Support\ Files/gRPC-Core/gRPC-Core-prefix.pch \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/extension_registry.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mem/arena.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c_standard_library.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/DarwinFoundation.modulemap \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mem/alloc.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/port/def.inc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/port/undef.inc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mem/internal/arena.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/extension.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/base/descriptor_constants.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/extension.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/field.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/size_log2.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/sub.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/message.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/enum.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/enum.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/field.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/mini_table/internal/message.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/hash/str_table.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/hash/common.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/third_party/upb/upb/base/string_view.h

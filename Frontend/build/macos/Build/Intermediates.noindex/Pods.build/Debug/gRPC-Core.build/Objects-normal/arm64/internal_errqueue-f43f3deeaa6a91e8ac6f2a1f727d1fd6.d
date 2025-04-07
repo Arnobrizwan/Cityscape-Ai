@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/lib/event_engine/posix_engine/internal_errqueue.cc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/Target\ Support\ Files/gRPC-Core/gRPC-Core-prefix.pch \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/lib/event_engine/posix_engine/internal_errqueue.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/include/grpc/support/port_platform.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/lib/iomgr/port.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/log.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/log_impl.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/absl_vlog_is_on.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/vlog_config.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/thread_annotations.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/nullability.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/nullability_impl.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/conditions.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/voidify.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/log_message.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/errno_saver.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/log_severity.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/nullguard.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/log_entry.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/config.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/time/time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/time/civil_time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/time/internal/cctz/include/cctz/civil_time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/time/internal/cctz/include/cctz/civil_time_detail.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/time/internal/cctz/include/cctz/time_zone.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/span.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/span.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/algorithm/algorithm.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/log_sink.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/has_absl_stringify.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/strip.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/internal/nullstream.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/log/vlog_is_on.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/gRPC-Core/src/core/lib/gprpp/strerror.h

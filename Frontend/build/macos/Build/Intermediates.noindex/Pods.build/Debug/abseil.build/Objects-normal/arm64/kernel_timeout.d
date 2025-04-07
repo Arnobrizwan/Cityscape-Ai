@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/synchronization/internal/kernel_timeout.cc \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/Target\ Support\ Files/abseil/abseil-prefix.pch \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/synchronization/internal/kernel_timeout.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/config.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/options.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/policy_checks.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/raw_logging.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/attributes.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/atomic_hook.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/log_severity.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/macros.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/optimization.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/port.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/clock.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/strings/string_view.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/nullability.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/nullability_impl.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/meta/type_traits.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/throw_delegate.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/civil_time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/internal/cctz/include/cctz/civil_time.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/time/internal/cctz/include/cctz/time_zone.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/call_once.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/invoke.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/low_level_scheduling.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/scheduling_mode.h \
+  /Users/arnobrizwan/Documents/GitHub/Cityscape-Ai/Frontend/macos/Pods/abseil/absl/base/internal/spinlock_wait.h
