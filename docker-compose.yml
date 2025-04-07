@@ -8,4 +8,4 @@ services:
     env_file:
       - .env
     stdin_open: true        # allows interactive input
-    tty: true               # enables terminal input
+    tty: true               # enables terminal input 
