@@ -5,14 +5,17 @@ import 'package:kitahack2025/LoginPage/authentication.dart';
 import 'package:kitahack2025/LoginPage/firstPage.dart';
 import 'package:kitahack2025/bottomNavigation.dart';
 import "firebase_options.dart";
+import 'dart:ui' as ui;
 
 void main() async {
   // Tell Flutter to load all dependencies when start loading Flutter
   WidgetsFlutterBinding.ensureInitialized();
+    // ui.debugDisableImpeller = true;
   // Wait Firebase to initialize
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
   runApp(const MyApp());
 }
 

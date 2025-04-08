@@ -1,10 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Add user permission for google location -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- Add permission to get internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:label="kitahack2025"
         android:name="${applicationName}"
@@ -36,12 +30,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- Add meta data of google location api -->
-        <!-- GOOGLE MAP API KEY -->
-        <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyA6Yvc3XHyVE2TgCVqO6G94F6-KDDPSI0g"/>
-
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
