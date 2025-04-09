@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install python-dotenv
 
 # Optional: expose a port if running a web server
-# EXPOSE 8000
+EXPOSE 8000
 
 # Run the chatbot script
-CMD ["python", "chatbot.py"]
+CMD ["python", "ml_server.py"]

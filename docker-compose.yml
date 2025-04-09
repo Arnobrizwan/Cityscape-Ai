@@ -1,11 +1,24 @@
-version: "3.9"
+# version: "3.9"  # Optional, safe to remove as Docker now ignores it
 
 services:
   chatbot:
+    build:
+      context: ./Backend
     image: arnob234/cityscape-chatbot:latest
     container_name: cityscape-chatbot
     restart: unless-stopped
     env_file:
       - .env
-    stdin_open: true        # allows interactive input
-    tty: true               # enables terminal input 
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
+
+  frontend:
+    build:
+      context: ./Frontend
+    image: cityscape-frontend:latest
+    container_name: cityscape-frontend
+    restart: unless-stopped
+    ports:
+      - "8080:80"

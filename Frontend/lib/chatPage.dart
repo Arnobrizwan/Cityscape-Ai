@@ -213,8 +213,9 @@ class _ChatPageState extends State<ChatPage> {
   Future<String> getGeminiResponse(String prompt) async {
   final token = await getIdToken();
 
-  final apiUrl = 'http://10.0.2.2:8000/ask'; // ✅ local server from Android Emulator
+  // final apiUrl = 'http://10.0.2.2:8000/ask';// ✅ local server from Android Emulator
 
+final apiUrl = 'https://448d-2001-e68-824e-b800-a96c-653a-d863-f917.ngrok-free.app/ask'; 
   final headers = {
     'Content-Type': 'application/json',
     if (token != null) 'Authorization': 'Bearer $token',
